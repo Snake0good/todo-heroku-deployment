@@ -49,7 +49,7 @@ function App() {
         <div className='overflow-auto h-full'>
           <h1 className='text-4xl mb-2 mt-4 font-bold'>My <a class="underline decoration-pink-500">Doodies</a> Today</h1>
           <div className='text-indigo-700'>
-            {todos.filter(todo => !todo.complete).length} more {todos.length === 1 ? 'task' : 'tasks'} today
+          <a class="p-1 text-xl"> {todos.filter(todo => !todo.complete).length}</a> more {todos.length === 1 ? 'task' : 'tasks'} today
           </div>
           <TodoList todos={todos} toggleTodo={toggleTodo}/>
           <button onClick={handleClearTodos} className='bg-red-300 p-4 rounded-lg  absolute top-8 right-5 rounded-full text-red-900 hover:bg-red-900 hover:text-red-100'><FaTrashAlt /></button>
