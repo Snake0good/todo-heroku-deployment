@@ -44,8 +44,8 @@ function App() {
   }
 
   return (
-    <div className='bg-indigo-500 w-screen h-screen flex place-content-center pr-5 pl-5'>
-      <div className="App bg-white shadow-xl shadow-indigo relative rounded-xl h-100% w-full max-w-lg p-5 mt-10 mb-10">
+    <div className='bg-indigo-500 w-screen h-screen flex place-content-center pr-5 pl-5 overflow-hidden'>
+      <div className="App bg-white shadow-xl shadow-indigo relative rounded-xl h-100% w-full max-w-lg p-5 mt-20 mb-20">
         <div className='overflow-auto h-full'>
           <h1 className='text-4xl mb-2 mt-4 font-bold'>My <a class="underline decoration-pink-500">Doodies</a></h1>
           <div className='text-indigo-700'>
