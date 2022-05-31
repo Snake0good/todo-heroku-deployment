@@ -47,7 +47,7 @@ function App() {
     <div className='bg-indigo-500 w-screen h-screen flex place-content-center p-5'>
       <div className="App bg-white shadow-xl shadow-indigo relative rounded-xl h-full w-full max-w-lg p-5">
         <div className='overflow-auto h-full'>
-          <h1 className='text-4xl mb-2 mt-4 font-bold'>My Doodies</h1>
+          <h1 className='text-4xl mb-2 mt-4 font-bold'>My <a class="underline decoration-pink-500">Doodies</a> Today</h1>
           <div className='text-indigo-700'>
             {todos.filter(todo => !todo.complete).length} more {todos.length === 1 ? 'task' : 'tasks'} today
           </div>
