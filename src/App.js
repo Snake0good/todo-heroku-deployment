@@ -47,7 +47,7 @@ function App() {
     <div className='bg-indigo-500 w-screen h-screen flex place-content-center p-5'>
       <div className="App bg-white shadow-xl shadow-indigo relative rounded-xl h-full w-full max-w-lg p-5">
         <div className='overflow-auto h-full'>
-          <h1 className='text-4xl mb-2 mt-4 font-bold'>My <a class="underline decoration-pink-500">Doodies</a> Today</h1>
+          <h1 className='text-4xl mb-2 mt-4 font-bold'>My <a class="underline decoration-pink-500">Doodies</a></h1>
           <div className='text-indigo-700'>
           <a class="p-1 text-xl"> {todos.filter(todo => !todo.complete).length}</a> more {todos.length === 1 ? 'task' : 'tasks'} today
           </div>
@@ -56,7 +56,7 @@ function App() {
         </div>  
 
         <div className='bg-indigo-100 w-full h-24 absolute bottom-0 left-0 rounded-b-lg'>
-          <input ref={todoNameRef} className='border-2 p-3 rounded-lg absolute bottom-5 left-5 w-4/6 focus:text-indigo-600 focus:outline-indigo-500' placeholder='enter your next task' type="text" />
+          <input ref={todoNameRef} className='border-2 p-3 rounded-lg absolute bottom-5 left-5 w-4/6 focus:text-indigo-600 focus:border-indigo-500' placeholder='enter your next task' type="text" />
           <button onClick={handleAddTodo} className='bg-green-300 p-3 rounded-full absolute bottom-5 right-5 text-2xl text-green-900 hover:bg-green-900 hover:text-green-100'><FaPlus /></button>
         </div>
       </div>
